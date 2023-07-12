@@ -61,3 +61,7 @@ body{
     margin: auto 0;
     box-sizing: border-box;
 }
+
+p, h1 {
+    font-family: 'PT Serif', serif;
+}
