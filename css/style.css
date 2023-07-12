@@ -1,0 +1,63 @@
+body{
+    background-color: #344A57;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+@-webkit-keyframes swinging{
+    0%{-webkit-transform: rotate(10deg);}
+    50%{-webkit-transform: rotate(-5deg)}
+    100%{-webkit-transform: rotate(10deg);}
+}
+ 
+@keyframes swinging{
+    0%{transform: rotate(10deg);}
+    50%{transform: rotate(-5deg)}
+    100%{transform: rotate(10deg);}
+}
+ 
+#morp-hand{
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+    width: 55%;
+    position: absolute;
+    top: -30%;
+    right: -10%;
+}
+
+#morp-words{
+    width: 53%;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: flexbox;
+    align-items: center;
+}
+
+#morp-container{
+    width: 550px;
+    min-width: 550px;
+    height: 250px;
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+    position: relative;
+}
+
+#content{
+    
+    width: 100%;
+    background-color: #212f37;
+    height: 1000px;
+    margin: auto 0;
+    box-sizing: border-box;
+}
