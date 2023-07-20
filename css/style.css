@@ -1,7 +1,7 @@
 body{
     background-color: #344A57;
-    max-width: 100%;
-    overflow-x: hidden;
+    width: 100%;
+    overflow: hidden;
     margin: 0;
 }
 
@@ -25,7 +25,7 @@ body{
     width: 55%;
     position: absolute;
     top: -30%;
-    right: -10%;
+    right: -15%;
 }
 
 #morp-words{
@@ -56,12 +56,75 @@ body{
 #content{
     
     width: 100%;
-    background-color: #212f37;
-    height: 1000px;
     margin: auto 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
-p, h1 {
-    font-family: 'PT Serif', serif;
+p, h1, h2, h3 {
+    font-family: 'Gelasio', serif;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+}
+
+#vertsplat {
+    position: absolute;
+    top: -5%;
+    left: -15%;
+    z-index: -1;
+}
+
+#wordsplat {
+    position: absolute;
+    bottom: -15%;
+    right: -12%;
+    width: 45%;
+}
+
+.button {
+    font-size: 48px;
+    color: #EC8C4E;
+    text-align: center;
+}
+
+.button:hover {
+    font-size: 52px;
+}
+
+@media screen and (max-width: 450px) and (max-height: 600px) {
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 550px){
+    #vertsplat {
+        height: 50%;
+        min-height: 320px;
+    }
+
+    #wordsplat {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px){
+    #vertsplat {
+        height: 70%;
+        
+    }
+
+    #wordsplat {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px){
+    #vertsplat {
+        height: 80%;
+        left: -5%;
+
+    }
+
+    #wordsplat {
+        display:block
+    }
 }
